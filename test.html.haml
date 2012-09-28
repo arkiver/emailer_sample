@@ -1,18 +1,5 @@
 %html
   :css
-    .left_container{
-      background: red;
-      float: left;
-    }
-    .center_container{
-      background: red;
-      width: 60%;
-    }
-    .right_container{
-      background: red;
-      float:right;
-    }
-
     .body{
       margin: 0px;
       padding: 0px;
@@ -21,13 +8,56 @@
       padding: 0px;
       margin: 0px;
     }
+    .left_container{
+      background: green;
+      float: left;
+      width: 20%;
+      height: 100%;
+    }
+    .center_container{
+      background: blue;
+      float: left;
+      width: 60%;
+      height: 100%;
+    }
+    .right_container{
+      background: red;
+      float:right;
+      width: 20%;
+      height: 100%;
+    }
+    .center_inner{
+      background: pink;
+      width: 90%;
+      margin-left: 5%;
+    }
+    .center_upper{
+      background: orange;
+      height: 70%;
+    }
+    .center_mid{
+      background: gray;
+      height: 20%;
+    }
+    .center_footer{
+      background: purple;
+      height: 10%;
+    }
   %body  
     .left_container
       %h1
         left title
     .center_container
-      %h1
-        center title
+      .center_inner
+        .center_upper
+          %h1
+            center title
+        .center_mid
+          %h1
+            center mid 
+        .center_footer
+          %h1
+            center footer
     .right_container
       %h1
         right title

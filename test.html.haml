@@ -1,0 +1,34 @@
+%html
+  :css
+    .left_container{
+      background: red;
+      float: left;
+    }
+    .center_container{
+      background: red;
+      width: 60%;
+    }
+    .right_container{
+      background: red;
+      float:right;
+    }
+
+    .body{
+      margin: 0px;
+      padding: 0px;
+    }
+    h1{
+      padding: 0px;
+      margin: 0px;
+    }
+  %body  
+    .left_container
+      %h1
+        left title
+    .center_container
+      %h1
+        center title
+    .right_container
+      %h1
+        right title
+

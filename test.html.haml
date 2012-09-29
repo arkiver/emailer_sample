@@ -3,27 +3,28 @@
     .body{
       margin: 0px;
       padding: 0px;
+      font-size: 1.3em;
     }
-    h1{
+    h1, hr{
       padding: 0px;
       margin: 0px;
     }
     .left_container{
       background: green;
       float: left;
-      width: 20%;
+      width: 18%;
       height: 130%;
     }
     .center_container{
       background: blue;
       float: left;
-      width: 60%;
+      width: 64%;
       height: 130%;
     }
     .right_container{
       background: red;
       float:right;
-      width: 20%;
+      width: 18%;
       height: 130%;
     }
     .center_inner{
@@ -33,7 +34,7 @@
     }
     .center_upper{
       background: orange;
-      height: 70%;
+      height: 55%;
     }
     .center_upper_imagebox{
       background: #ff22a2;
@@ -44,7 +45,14 @@
     }
     .center_mid{
       background: gray;
-      height: 20%;
+      height: 35%;
+    }
+    .huge_text{
+      font-size: 4em;
+    }
+    .text_area.larger{
+      font-size: 2em;
+      padding-top: 15px;
     }
     .center_footer{
       background: purple;
@@ -63,14 +71,32 @@
             %h1
               imagebox
         .center_mid
-          %h1
-            center mid
-          .text_area
-            %h1
-              text area center mid div
+          .huge_text
+            Airfare Up.
+          .huge_text
+            Cab fare down.
+          .text_area.larger
+            Banglore airport transfer for only Rs.500/-
+          .text_area.larger
+            To Book a car call 3355 3355
+          .text_area.larger
+            Use code Airport500
+        %hr      
         .center_footer
-          %h1
-            center footer
+          %table
+            %tr
+              %td
+                Track your cab on app
+                |
+              %td
+                Same cab fare 24X7
+                |
+              %td
+                Download the app from
+              %td
+                %img
+              %td
+                %img
     .right_container
       %h1
         right title

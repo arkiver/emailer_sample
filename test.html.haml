@@ -47,6 +47,16 @@
       background: gray;
       height: 35%;
     }
+    .right{
+      float: right;
+      height: 25%;
+      background: red;
+      margin-top: 26.5%;
+    }
+    .left{
+      float: left;
+      background: white;
+    }
     .huge_text{
       font-size: 4em;
     }
@@ -71,16 +81,23 @@
             %h1
               imagebox
         .center_mid
-          .huge_text
-            Airfare Up.
-          .huge_text
-            Cab fare down.
-          .text_area.larger
-            Banglore airport transfer for only Rs.500/-
-          .text_area.larger
-            To Book a car call 3355 3355
-          .text_area.larger
-            Use code Airport500
+          .left
+            .huge_text
+              Airfare Up.
+            .huge_text
+              Cab fare down.
+            .text_area.larger
+              Banglore airport transfer for only Rs.500/-
+            .text_area.larger
+              To Book a cab  call 3355 3355
+            .text_area.larger
+              Use code Airport500
+          .right
+            .logo
+              %h1
+                another div
+            .bottom_text    
+              Be independent  
         %hr      
         .center_footer
           %table

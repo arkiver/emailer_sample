@@ -2,9 +2,13 @@
   <body>
     <style type='text/css'>
       /*<![CDATA[*/
-        h1, hr{
+        h1{
           padding: 0px;
           margin: 0px;
+        }
+        hr{
+          width: 95%;
+          color: black;
         }
         body{
           margin: 0px;
@@ -19,16 +23,20 @@
           height: 100px;
           background: transparent;
         }
+        span.logo_text{
+          
+        }
         img{
           height: 80px;
+        }
+        img#logo{
+          margin-top: 200px;
+          padding-right: 20px;
         }
         img.app_store{
           height: 30px;
         }
         img.play_store{
-          height: 30px;
-        }
-        table.footer_table{
           height: 30px;
         }
         table.center_upper_table{
@@ -38,45 +46,42 @@
         
         }
         td.center_main_table{
-        
+          background: black;
         }
         td.right_main_table{
         
         }
         .left_container{
-          background: green;
           height: 130%;
         }
         .center_container{
           background: blue;
         }
         .right_container{
-          background: red;
           height: 130%;
         }
         .center_upper{
-          background: orange;
+        
         }
         .center_mid{
-          background: gray;
+        
           height: 35%;
         }
         .right{
           height: 25%;
-          background: red;
         }
         .left{
-          background: white;
+          padding: 30px;
         }
         .huge_text{
           font-size: 4em;
         }
         .text_area.larger{
-          font-size: 2em;
+          font-size: 1.6em;
           padding-top: 15px;
         }
         .center_footer{
-          background: purple;
+          padding-bottom: 50px;
         }
       /*]]>*/
     </style>
@@ -94,7 +99,7 @@
             <div class='center_upper'>
               <table class='center_upper_table'>
                 <tr>
-                  <td height='700px'>
+                  <td height='500px'>
                     <div class='center_upper_imagebox'>
                       <h1>
                         imagebox
@@ -126,8 +131,11 @@
                       </div>
                     </div>
                   </td>
-                  <td>
-                    <img alt='Ola cabs logo' src='olacabs_final_logo.png' />
+                  <td align='center'>
+                    <img alt='Ola cabs logo' id='logo' src='olacabs_final_logo.png' />
+                    <span class='logo_text'>
+                      Be independent
+                    </span>
                   </td>
                 </tr>
               </table>

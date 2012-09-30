@@ -14,6 +14,15 @@
         height: 700px;
         width: 100%;
       }
+      img{
+        height: 80px;
+      }
+      img.app_store{
+        height: 30px;
+      }
+      img.play_store{
+        height: 30px;
+      }
       table.footer_table{
       height: 30px;
       }
@@ -82,7 +91,7 @@
           .left_container
             %h1
               left title
-        %td.center_main_table      
+        %td.center_main_table
           .center_container
             .center_inner
               .center_upper
@@ -103,12 +112,8 @@
                     To Book a cab  call 3355 3355
                   .text_area.larger
                     Use code Airport500
-                .right
-                  .logo
-                    %h1
-                      another div
-                  .bottom_text    
-                    Be independent  
+                %img{:src => "olacabs_final_logo.png", :alt => "Ola cabs logo"}
+                  
               %hr      
               .center_footer
                 %table.footer_table
@@ -122,9 +127,9 @@
                     %td
                       Download the app from
                     %td
-                      %img
+                      %img.play_store{:src => "google_play.jpg", :alt => "google play logo"}
                     %td
-                      %img
+                      %img.app_store{:src => "app_store.png", :alt => "apple app store logo"}
         %td.right_main_table
           .right_container
             %h1

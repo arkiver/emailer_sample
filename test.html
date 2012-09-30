@@ -29,14 +29,15 @@
           background: transparent;
         }
         span.logo_text{
-          
+        
         }
         img{
           height: 80px;
         }
-        img#logo{
-          margin-top: 200px;
-          padding-right: 60px;
+        img.center_image{
+          height: 350px;
+          max-height: 380px;
+          padding-left: 100px;
         }
         img.app_store{
           height: 30px;
@@ -60,7 +61,7 @@
           height: 130%;
         }
         .center_container{
-          background: blue;
+          background: #6CE51B;
         }
         .right_container{
           height: 130%;
@@ -70,13 +71,13 @@
         }
         .center_mid{
         
-          height: 35%;
         }
         .right{
-          height: 25%;
+          margin-top: 200px;
+          padding-right: 60px;
         }
         .left{
-          padding: 50px;
+          padding-left: 50px;
         }
         .huge_text{
           font-size: 4em;
@@ -87,6 +88,9 @@
         }
         .center_footer{
           padding-bottom: 50px;
+        }
+        .center_upper_imagebox{
+          padding-left: 100px;
         }
       /*]]>*/
     </style>
@@ -104,9 +108,7 @@
                 <tr>
                   <td height='500px'>
                     <div class='center_upper_imagebox'>
-                      <h1>
-                        imagebox
-                      </h1>
+                      <img alt='center logo image' class='center_image' src='http://i2.listal.com/image/1632733/500full.jpg' />
                     </div>
                   </td>
                 </tr>
@@ -135,12 +137,14 @@
                     </div>
                   </td>
                   <td align='center'>
-                    <a href='http://www.olacabs.com'>
-                      <img alt='Ola cabs logo' id='logo' src='olacabs_final_logo.png' />
-                    </a>
-                    <span class='logo_text'>
-                      Be independent
-                    </span>
+                    <div class='right'>
+                      <a href='http://www.olacabs.com'>
+                        <img alt='Ola cabs logo' id='logo' src='olacabs_final_logo.png' />
+                      </a>
+                      <span class='logo_text'>
+                        Be independent
+                      </span>
+                    </div>
                   </td>
                 </tr>
               </table>
@@ -160,7 +164,7 @@
                   </td>
                   <td width='100px;'>
                     <a href='https://play.google.com/store/apps/details?id=com.olacabs.customer&amp;hl=en'>
-                      <img alt='google play logo' class='play_store' src='google_play.jpg' />
+                      <img alt='google play logo' class='play_store' src='google_play.png' />
                     </a>
                   </td>
                   <td width='100px;'>

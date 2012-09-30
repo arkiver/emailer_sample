@@ -28,14 +28,15 @@
         background: transparent;
       }
       span.logo_text{
-        
+
       }
       img{
         height: 80px;
       }
-      img#logo{
-        margin-top: 200px;
-        padding-right: 60px;
+      img.center_image{
+        height: 350px;
+        max-height: 380px;
+        padding-left: 100px;
       }
       img.app_store{
         height: 30px;
@@ -59,7 +60,7 @@
         height: 130%;
       }
       .center_container{
-        background: blue;
+        background: #6CE51B;
       }
       .right_container{
         height: 130%;
@@ -69,13 +70,13 @@
       }
       .center_mid{
 
-        height: 35%;
       }
       .right{
-        height: 25%;
+        margin-top: 200px;
+        padding-right: 60px;
       }
       .left{
-        padding: 50px;
+        padding-left: 50px;
       }
       .huge_text{
         font-size: 4em;
@@ -86,6 +87,9 @@
       }
       .center_footer{
         padding-bottom: 50px;
+      }
+      .center_upper_imagebox{
+        padding-left: 100px;
       }
     %table
       %tr
@@ -100,8 +104,7 @@
                 %tr
                   %td{:height => "500px"}
                     .center_upper_imagebox
-                      %h1
-                        imagebox
+                      %img.center_image{:src => "http://i2.listal.com/image/1632733/500full.jpg", :alt => "center logo image"}
             .center_mid
               %table.text_logo_table
                 %tr
@@ -117,11 +120,13 @@
                         To Book a cab  call 3355 3355
                       .text_area.larger
                         Use code Airport500
+                        
                   %td{:align => "center"}
-                    %a{:href => "http://www.olacabs.com"}
-                      %img{:src => "olacabs_final_logo.png", :alt => "Ola cabs logo", :id => "logo"}
-                    %span.logo_text
-                      Be independent
+                    .right
+                      %a{:href => "http://www.olacabs.com"}
+                        %img{:src => "olacabs_final_logo.png", :alt => "Ola cabs logo", :id => "logo"}
+                      %span.logo_text
+                        Be independent
             %hr      
             .center_footer
               %table.footer_table
@@ -134,10 +139,11 @@
                     Download the app from
                   %td{:width => "100px;"}
                     %a{:href => "https://play.google.com/store/apps/details?id=com.olacabs.customer&hl=en"}
-                      %img.play_store{:src => "google_play.jpg", :alt => "google play logo"}
+                      %img.play_store{:src => "google_play.png", :alt => "google play logo"}
                   %td{:width => "100px;"}
                     %a{:href => "http://itunes.apple.com/in/app/ola-cabs/id539179365?mt=8"}
                       %img.app_store{:src => "app_store.png", :alt => "apple app store logo"}
+
         %td.right_main_table
           .right_container
             %h1

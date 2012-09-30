@@ -11,8 +11,12 @@
         font-size: 1.3em;
       }
       table{
-        height: 700px;
         width: 100%;
+        border: 0px;
+      }
+      table.text_logo_table{
+        height: 100px;
+        background: transparent;
       }
       img{
         height: 80px;
@@ -24,7 +28,10 @@
         height: 30px;
       }
       table.footer_table{
-      height: 30px;
+        height: 30px;
+      }
+      table.center_upper_table{
+        
       }
       td.left_main_table{
 
@@ -41,27 +48,13 @@
       }
       .center_container{
         background: blue;
-        height: 130%;
       }
       .right_container{
         background: red;
         height: 130%;
       }
-      .center_inner{
-        background: pink;
-        width: 90%;
-        margin-left: 5%;
-      }
       .center_upper{
         background: orange;
-        height: 60%;
-      }
-      .center_upper_imagebox{
-        background: #ff22a2;
-        width: 50%;
-        margin-left: 25%;
-        margin-top: 7%;
-        height: 70%;
       }
       .center_mid{
         background: gray;
@@ -72,14 +65,13 @@
         background: red;
       }
       .left{
-        float: left;
         background: white;
       }
       .huge_text{
         font-size: 4em;
       }
       .text_area.larger{
-        font-size: 1.6em;
+        font-size: 2em;
         padding-top: 15px;
       }
       .center_footer{
@@ -91,45 +83,49 @@
           .left_container
             %h1
               left title
-        %td.center_main_table
+        %td.center_main_table{:width => "900px"}
           .center_container
-            .center_inner
-              .center_upper
-                %h1
-                  center title
-                .center_upper_imagebox
-                  %h1
-                    imagebox
-              .center_mid
-                .left
-                  .huge_text
-                    Airfare Up.
-                  .huge_text
-                    Cab fare down.
-                  .text_area.larger
-                    Banglore airport transfer for only Rs.500/-
-                  .text_area.larger
-                    To Book a cab  call 3355 3355
-                  .text_area.larger
-                    Use code Airport500
-                %img{:src => "olacabs_final_logo.png", :alt => "Ola cabs logo"}
-                  
-              %hr      
-              .center_footer
-                %table.footer_table
-                  %tr
-                    %td
-                      Track your cab on app
-                      |
-                    %td
-                      Same cab fare 24X7
-                      |
-                    %td
-                      Download the app from
-                    %td
-                      %img.play_store{:src => "google_play.jpg", :alt => "google play logo"}
-                    %td
-                      %img.app_store{:src => "app_store.png", :alt => "apple app store logo"}
+            .center_upper
+              %table.center_upper_table
+                %tr
+                  %td{:height => "700px"}
+                    .center_upper_imagebox
+                      %h1
+                        imagebox
+            .center_mid
+              %table.text_logo_table
+                %tr
+                  %td{:width=> "900px"}
+                    .left
+                      .huge_text
+                        Airfare Up.
+                      .huge_text
+                        Cab fare down.
+                      .text_area.larger
+                        Banglore airport transfer for only Rs.500/-
+                      .text_area.larger
+                        To Book a cab  call 3355 3355
+                      .text_area.larger
+                        Use code Airport500
+                  %td     
+                    %img{:src => "olacabs_final_logo.png", :alt => "Ola cabs logo"}
+                
+            %hr      
+            .center_footer
+              %table.footer_table
+                %tr
+                  %td
+                    Track your cab on app
+                    |
+                  %td
+                    Same cab fare 24X7
+                    |
+                  %td
+                    Download the app from
+                  %td
+                    %img.play_store{:src => "google_play.jpg", :alt => "google play logo"}
+                  %td
+                    %img.app_store{:src => "app_store.png", :alt => "apple app store logo"}
         %td.right_main_table
           .right_container
             %h1

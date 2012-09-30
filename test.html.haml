@@ -14,22 +14,29 @@
       body{
         height: 100%;
       }
+      table{
+        height: 100%;
+        width: 100%;
+      }
+      td.left_main_table{
+
+      }
+      td.center_main_table{
+
+      }
+      td.right_main_table{
+
+      }
       .left_container{
         background: green;
-        float: left;
-        width: 18%;
         height: 130%;
       }
       .center_container{
         background: blue;
-        float: left;
-        width: 64%;
         height: 130%;
       }
       .right_container{
         background: red;
-        float:right;
-        width: 18%;
         height: 130%;
       }
       .center_inner{
@@ -40,8 +47,8 @@
       .center_upper{
         background: orange;
         height: 60%;
-      }
       .center_upper_imagebox{
+      }
         background: #ff22a2;
         width: 50%;
         margin-left: 25%;
@@ -73,53 +80,57 @@
         background: purple;
         height: 10%;
       }
-
-    .left_container
-      %h1
-        left title
-    .center_container
-      .center_inner
-        .center_upper
-          %h1
-            center title
-          .center_upper_imagebox
+    %table
+      %tr
+        %td.left_main_table
+          .left_container
             %h1
-              imagebox
-        .center_mid
-          .left
-            .huge_text
-              Airfare Up.
-            .huge_text
-              Cab fare down.
-            .text_area.larger
-              Banglore airport transfer for only Rs.500/-
-            .text_area.larger
-              To Book a cab  call 3355 3355
-            .text_area.larger
-              Use code Airport500
-          .right
-            .logo
-              %h1
-                another div
-            .bottom_text    
-              Be independent  
-        %hr      
-        .center_footer
-          %table
-            %tr
-              %td
-                Track your cab on app
-                |
-              %td
-                Same cab fare 24X7
-                |
-              %td
-                Download the app from
-              %td
-                %img
-              %td
-                %img
-    .right_container
-      %h1
-        right title
+              left title
+        %td.center_main_table      
+          .center_container
+            .center_inner
+              .center_upper
+                %h1
+                  center title
+                .center_upper_imagebox
+                  %h1
+                    imagebox
+              .center_mid
+                .left
+                  .huge_text
+                    Airfare Up.
+                  .huge_text
+                    Cab fare down.
+                  .text_area.larger
+                    Banglore airport transfer for only Rs.500/-
+                  .text_area.larger
+                    To Book a cab  call 3355 3355
+                  .text_area.larger
+                    Use code Airport500
+                .right
+                  .logo
+                    %h1
+                      another div
+                  .bottom_text    
+                    Be independent  
+              %hr      
+              .center_footer
+                %table.footer_table
+                  %tr
+                    %td
+                      Track your cab on app
+                      |
+                    %td
+                      Same cab fare 24X7
+                      |
+                    %td
+                      Download the app from
+                    %td
+                      %img
+                    %td
+                      %img
+        %td.right_main_table
+          .right_container
+            %h1
+              right title
 

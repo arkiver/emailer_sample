@@ -15,22 +15,29 @@
         body{
           height: 100%;
         }
+        table{
+          height: 100%;
+          width: 100%;
+        }
+        td.left_main_table{
+        
+        }
+        td.center_main_table{
+        
+        }
+        td.right_main_table{
+        
+        }
         .left_container{
           background: green;
-          float: left;
-          width: 18%;
           height: 130%;
         }
         .center_container{
           background: blue;
-          float: left;
-          width: 64%;
           height: 130%;
         }
         .right_container{
           background: red;
-          float:right;
-          width: 18%;
           height: 130%;
         }
         .center_inner{
@@ -41,8 +48,8 @@
         .center_upper{
           background: orange;
           height: 60%;
-        }
         .center_upper_imagebox{
+        }
           background: #ff22a2;
           width: 50%;
           margin-left: 25%;
@@ -76,82 +83,92 @@
         }
       /*]]>*/
     </style>
-    <div class='left_container'>
-      <h1>
-        left title
-      </h1>
-    </div>
-    <div class='center_container'>
-      <div class='center_inner'>
-        <div class='center_upper'>
-          <h1>
-            center title
-          </h1>
-          <div class='center_upper_imagebox'>
+    <table>
+      <tr>
+        <td class='left_main_table'>
+          <div class='left_container'>
             <h1>
-              imagebox
+              left title
             </h1>
           </div>
-        </div>
-        <div class='center_mid'>
-          <div class='left'>
-            <div class='huge_text'>
-              Airfare Up.
-            </div>
-            <div class='huge_text'>
-              Cab fare down.
-            </div>
-            <div class='text_area larger'>
-              Banglore airport transfer for only Rs.500/-
-            </div>
-            <div class='text_area larger'>
-              To Book a cab  call 3355 3355
-            </div>
-            <div class='text_area larger'>
-              Use code Airport500
+        </td>
+        <td class='center_main_table'>
+          <div class='center_container'>
+            <div class='center_inner'>
+              <div class='center_upper'>
+                <h1>
+                  center title
+                </h1>
+                <div class='center_upper_imagebox'>
+                  <h1>
+                    imagebox
+                  </h1>
+                </div>
+              </div>
+              <div class='center_mid'>
+                <div class='left'>
+                  <div class='huge_text'>
+                    Airfare Up.
+                  </div>
+                  <div class='huge_text'>
+                    Cab fare down.
+                  </div>
+                  <div class='text_area larger'>
+                    Banglore airport transfer for only Rs.500/-
+                  </div>
+                  <div class='text_area larger'>
+                    To Book a cab  call 3355 3355
+                  </div>
+                  <div class='text_area larger'>
+                    Use code Airport500
+                  </div>
+                </div>
+                <div class='right'>
+                  <div class='logo'>
+                    <h1>
+                      another div
+                    </h1>
+                  </div>
+                  <div class='bottom_text'>
+                    Be independent
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class='center_footer'>
+                <table class='footer_table'>
+                  <tr>
+                    <td>
+                      Track your cab on app
+                      |
+                    </td>
+                    <td>
+                      Same cab fare 24X7
+                      |
+                    </td>
+                    <td>
+                      Download the app from
+                    </td>
+                    <td>
+                      <img />
+                    </td>
+                    <td>
+                      <img />
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
-          <div class='right'>
-            <div class='logo'>
-              <h1>
-                another div
-              </h1>
-            </div>
-            <div class='bottom_text'>
-              Be independent
-            </div>
+        </td>
+        <td class='right_main_table'>
+          <div class='right_container'>
+            <h1>
+              right title
+            </h1>
           </div>
-        </div>
-        <hr />
-        <div class='center_footer'>
-          <table>
-            <tr>
-              <td>
-                Track your cab on app
-                |
-              </td>
-              <td>
-                Same cab fare 24X7
-                |
-              </td>
-              <td>
-                Download the app from
-              </td>
-              <td>
-                <img />
-              </td>
-              <td>
-                <img />
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-    <div class='right_container'>
-      <h1>
-        right title
-      </h1>
-    </div>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>

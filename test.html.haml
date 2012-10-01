@@ -27,17 +27,19 @@
         height: 100px;
         background: transparent;
       }
-
-      img{
-        height: 80px;
-      }
       img.app_store{
+        height: 80px;
         max-height: 30px;
         max-width: 130px;
       }
       img.play_store{
+        height: 80px;
         max-height: 30px;
         max-width: 130px;
+      }
+      img.ola_logo{
+        height: 80px;
+        max-height: 80px;
       }
       td.center_main_table{
         background: rgb(152, 215, 43);
@@ -66,9 +68,7 @@
         padding-bottom: 50px;
       }
       .center_upper_imagebox{
-        padding-left: 220px;
-        height: 240px;
-        max-height: 240px;
+        padding-left: 280px;
       }
     %table
       %tr
@@ -83,7 +83,7 @@
                 %tr
                   %td.imagebox{:height => "500px"}
                     .center_upper_imagebox
-                      %img.center_image{:src => "http://www.olacabs.com/img/campaigns/large_center_image.png", :alt => "new updated price image: large"}
+                      %img.large_center{:src => "http://www.olacabs.com/img/campaigns/airfare_small.png", :alt => "Airfare element"}
             .center_mid
               %table.text_logo_table
                 %tr
@@ -102,10 +102,10 @@
                   %td{:align => "center"}
                     .right
                       %a{:href => "http://www.olacabs.com"}
-                        %img{:src => "http://www.olacabs.com/img/campaigns/olacabs_final_logo.png", :alt => "Ola cabs logo", :id => "logo"}
+                        %img.ola_logo{:src => "http://www.olacabs.com/img/campaigns/olacabs_final_logo.png", :alt => "Ola cabs logo", :id => "logo"}
                       %span.logo_text
                         %br
-                          Be independent
+                          Be Independent
             %hr      
             .center_footer
               %table.footer_table

@@ -17,7 +17,9 @@
         }
         table{
           width: 100%;
-          border: 0px;
+        }
+        td{
+          border: solid;
         }
         table.footer_table{
           text-align: center;
@@ -28,28 +30,17 @@
           height: 100px;
           background: transparent;
         }
-        span.logo_text{
         
-        }
         img{
           height: 80px;
         }
-        img.center_image{
-          height: 350px;
-          max-height: 380px;
-          padding-left: 100px;
-        }
         img.app_store{
-          height: 30px;
+          max-height: 30px;
+          max-width: 130px;
         }
         img.play_store{
-          height: 30px;
-        }
-        table.center_upper_table{
-          
-        }
-        td.left_main_table{
-        
+          max-height: 30px;
+          max-width: 130px;
         }
         td.center_main_table{
         
@@ -67,15 +58,15 @@
           background-image: -o-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(152, 215, 43) 38%);
           background-image: radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(152, 215, 43) 38%);
           background-image: -moz-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(152, 215, 43) 38%);
+          background: -moz-radial-gradient(50% 25% , ellipse closest-side, #FFFFFF, #98D72B 120%) repeat scroll 0 0 #98D72B;
         }
-        .right_container{
-          height: 130%;
-        }
-        .center_upper{
-        
-        }
-        .center_mid{
-        
+        .center_container{
+          -# background: rgb(152, 215, 43);
+          -# background-image: -webkit-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(152, 215, 43) 38%);
+          -# background-image: -ms-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(152, 215, 43) 38%);
+          -# background-image: -o-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(152, 215, 43) 38%);
+          -# background-image: radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(152, 215, 43) 38%);
+          -# background-image: -moz-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(152, 215, 43) 38%);
         }
         .right{
           margin-top: 200px;
@@ -94,8 +85,8 @@
         .center_footer{
           padding-bottom: 50px;
         }
-        .center_upper_imagebox{
-          padding-left: 100px;
+        td.imagebox{
+        
         }
       /*]]>*/
     </style>
@@ -111,7 +102,7 @@
             <div class='center_upper'>
               <table class='center_upper_table'>
                 <tr>
-                  <td height='500px'>
+                  <td class='imagebox' height='500px'>
                     <div class='center_upper_imagebox'>
                       <img alt='center logo image' class='center_image' src='image_path' />
                     </div>

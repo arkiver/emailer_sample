@@ -1,3 +1,4 @@
+!!!
 %html{"xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
   %body  
     :css
@@ -36,7 +37,7 @@
         font-size: 0.8em;
       }
       td.center_main_table{
-        background: rgb(152, 215, 43);
+        background-color: rgb(152, 215, 43);
         background-image: -webkit-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(200, 215, 36) 38%);
         background-image: -ms-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(200, 215, 36) 38%);
         background-image: -o-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(200, 215, 36) 38%);
@@ -71,8 +72,8 @@
           .left_container
             %h1
 
-        %td.center_main_table{:width => "650px"}
-          .center_container
+        %td.center_main_table{:width => "650px", :style => "background-image: url('http://www.olacabs.com/img/campaigns/back_gradient.jpg')"}
+          .center_container{ :style => "background-image: url('http://www.olacabs.com/img/campaigns/back_gradient.jpg')" }
             .center_upper
               %table.center_upper_table
                 %tr
@@ -122,8 +123,8 @@
                   %td
                     %a{:href => "http://itunes.apple.com/in/app/ola-cabs/id539179365?mt=8"}
                       %img.app_store{:src => "http://www.olacabs.com/img/campaigns/app_store.png", :alt => "apple app store logo"}
-              %span.terms
-                *T&C apply
+            %span.terms
+              *T&C apply
 
         %td.right_main_table
           .right_container

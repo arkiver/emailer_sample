@@ -7,22 +7,27 @@
         margin: 0px;
       }
       hr{
-        width: 98%;
         color: #000;
         background-color: #000;
+        width: 88%;
       }
       body{
         margin: 0px;
         padding: 0px;
         font-size: 1.3em;
         font-family: 'stag sans', arial;
-      }
+        }
       table{
         width: 100%;
-      }      
+      }
+      table.footer_outer{
+
+      }
       table.footer_table{
+        font-size: 0.7em;
+        width: 80%;
+        margin-left:  55px;
         text-align: center;
-        width: 850px;
       }
       table.text_logo_table{
         height: 100px;
@@ -30,8 +35,8 @@
       }
       .terms{
         padding: 5px;
-        font-size: 0.9em;
-        margin-left: 750px;
+        font-size: 0.6em;
+      margin-left: 650px;
       }
       span.logo_text{
         font-size: 0.8em;
@@ -55,7 +60,7 @@
         background: -moz-radial-gradient(50% 25% , ellipse closest-side, #FFFFFF, #C8D724 120%) repeat scroll 0 0 #C8D724;
       }
       .right{
-        margin-top: 200px;
+        margin-top: 240px;
         padding-right: 60px;
       }
       .left{
@@ -65,14 +70,14 @@
         font-size: 3.5em;
       }
       .text_area.larger{
-        font-size: 1.5em;
+        font-size: 1em;
         padding-top: 15px;
       }
       .center_footer{
         padding-bottom: 10px;
       }
       .center_upper_imagebox{
-        padding-left: 280px;
+        padding-left: 190px;
         padding-top: 40px;
       }
     %table
@@ -81,7 +86,7 @@
           .left_container
             %h1
 
-        %td.center_main_table{:width => "650px"}
+        %td.center_main_table{:width => "550px"}
           .center_container{ :style => "background-image: url('http://www.olacabs.com/img/campaigns/back_gradient.jpg')" }
             .center_upper
               %table.center_upper_table
@@ -113,7 +118,7 @@
                         
             %hr      
             .center_footer
-              %table.footer_table
+              %table.footer_outer
                 %tr
                   %td{:width => "190px;"}
                     lorem ipsum app&nbsp;&nbsp;&nbsp;|

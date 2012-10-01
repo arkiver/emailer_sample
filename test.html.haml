@@ -14,6 +14,7 @@
         margin: 0px;
         padding: 0px;
         font-size: 1.3em;
+        font-family: stag-sans, arial;
       }
       table{
         width: 100%;
@@ -31,14 +32,17 @@
         padding: 5px;
         font-size: 0.9em;
       }
+      span.logo_text{
+        font-size: 0.8em;
+      }
       td.center_main_table{
         background: rgb(152, 215, 43);
-        background-image: -webkit-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(152, 215, 43) 38%);
-        background-image: -ms-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(152, 215, 43) 38%);
-        background-image: -o-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(152, 215, 43) 38%);
-        background-image: radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(152, 215, 43) 38%);
-        background-image: -moz-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(152, 215, 43) 38%);
-        background: -moz-radial-gradient(50% 25% , ellipse closest-side, #FFFFFF, #98D72B 120%) repeat scroll 0 0 #98D72B;
+        background-image: -webkit-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(200, 215, 36) 38%);
+        background-image: -ms-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(200, 215, 36) 38%);
+        background-image: -o-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(200, 215, 36) 38%);
+        background-image: radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(200, 215, 36) 38%);
+        background-image: -moz-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(200, 215, 36) 38%);
+        background: -moz-radial-gradient(50% 25% , ellipse closest-side, #FFFFFF, #C8D724 120%) repeat scroll 0 0 #C8D724;
       }
       .right{
         margin-top: 200px;
@@ -48,7 +52,7 @@
         padding-left: 50px;
       }
       .huge_text{
-        font-size: 3em;
+        font-size: 3.5em;
       }
       .text_area.larger{
         font-size: 1.5em;
@@ -81,22 +85,27 @@
                   %td
                     .left
                       .huge_text
-                        Airfare Up.
+                        Airfare
+                        %b
+                          Up.
                       .huge_text
-                        Cab fare down.
+                        Cab fare
+                        %b
+                          down.
                       .text_area.larger
                         Banglore airport transfer for only Rs.500/-
                       .text_area.larger
                         To book a cab  call 3355 3355
-                      .text_area.larger
-                        Use code Airport500
+                        %br
+                          Use code Airport500
                   %td{:align => "center"}
                     .right
                       %a{:href => "http://www.olacabs.com"}
                         %img.ola_logo{:src => "http://www.olacabs.com/img/campaigns/olacabs_final_logo.png", :alt => "Ola cabs logo", :id => "logo"}
                       %span.logo_text
                         %br
-                          Be Independent
+                          %b
+                            BE INDEPENDENT
             %hr      
             .center_footer
               %table.footer_table
@@ -115,7 +124,6 @@
                       %img.app_store{:src => "http://www.olacabs.com/img/campaigns/app_store.png", :alt => "apple app store logo"}
               %span.terms
                 *T&C apply
-                        
 
         %td.right_main_table
           .right_container

@@ -20,9 +20,6 @@
       table{
         width: 100%;
       }
-      table.footer_outer{
-
-      }
       table.footer_table{
         font-size: 0.7em;
         width: 80%;
@@ -40,12 +37,6 @@
       }
       span.logo_text{
         font-size: 0.8em;
-      }
-      td.center_main_table{
-
-      }
-      td.right_main_table{
-
       }
       .left_container{
         height: 130%;
@@ -87,7 +78,7 @@
             %h1
 
         %td.center_main_table{:width => "550px"}
-          .center_container{ :style => "background-image: url('http://www.olacabs.com/img/campaigns/back_gradient.jpg')" }
+          .center_container{ :style => "background-image: url('<I used an image to get some gradient effects to appear within emails>')" }
             .center_upper
               %table.center_upper_table
                 %tr
@@ -100,7 +91,7 @@
                   %td{:width=> "900px"}
                     .left
                       .huge_text
-                        Cab fare down.
+                        Lorem Ipsum Lorem Ipsum Lorem Ipsum 
                       .huge_text
                         Lorem Ipsum 
                       .text_area.larger
@@ -112,7 +103,7 @@
                         
                   %td{:align => "center"}
                     .right
-                      %a{:href => "http://www.google.com"}
+                      %a{:href => "<point logo to a URL>"}
                         %img{:src => "image.png", :alt => "logo", :id => "logo"}
                       %span.logo_text
                         
@@ -121,17 +112,17 @@
               %table.footer_outer
                 %tr
                   %td{:width => "190px;"}
-                    lorem ipsum app&nbsp;&nbsp;&nbsp;|
+                    lorem ipsum &nbsp;&nbsp;&nbsp;|
                   %td{:width => "170px;"}
                     lorem ipsum 24X7&nbsp;&nbsp;&nbsp;|
                   %td{:width => "190px;"}
                     lorem ipsum
                   %td{:width => "100px;"}
-                    %a{:href => "https://google.com"}
-                      %img.play_store{:src => "image.png", :alt => "google play logo"}
+                    %a{:href => "https://foobarbaz.com"}
+                      %img.footer_image_one{:src => "image.png", :alt => "foo bar baz"}
                   %td{:width => "100px;"}
-                    %a{:href => "http://google.com"}
-                      %img.app_store{:src => "image.png", :alt => "apple app store logo"}
+                    %a{:href => "http://foobarbaz.com"}
+                      %img.footer_image_two{:src => "image.png", :alt => "foo bar baz"}
 
         %td.right_main_table
           .right_container
